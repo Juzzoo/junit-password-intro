@@ -1,7 +1,6 @@
 import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.Parameter;
 
 public class PasswordUtilsTest {
     @Test
@@ -41,16 +40,16 @@ void testDescribepasswordLengthExtraLongPassword() {
     @Test
      void testcheckifthereisthreeRepeatedCharacters() {
      // arrange
-     String password = "paaasword";
+     String password = "iiiiiiiiiiii";
     
      // act
-    boolean actual = PasswordUtils.isAlphanumeric(password);
+    boolean actual = PasswordUtils.containsTriple(password);
     
     
     // assert  
     assertEquals(true, actual);
 
-}
 
+}
 
 }
