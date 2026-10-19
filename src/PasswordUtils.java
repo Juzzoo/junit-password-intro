@@ -42,7 +42,8 @@ public class PasswordUtils {
         }
         return true;
     }
-
+     
+    
     /**
 * Checks whether a password has a character that is repeated at least three
 * times in a row.
@@ -80,9 +81,16 @@ return false;
 * @return the count of special characters
 */
 public static int countSpecialCharacters(String password) {
-// TODO: Make tests FIRST, then implement the method
-// Please have your tests in a separate commit from the implementation
-return 0;
+    int GG = 0;
+for (int i = 0; i < password.length() - 1; i++) {
+            char c = password.charAt(i);
+            if (!Character.isLetterOrDigit(c)) {
+                
+                GG++;
+
+            } 
+        }
+return GG;
 }
 
 }
