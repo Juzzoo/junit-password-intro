@@ -52,4 +52,35 @@ void testDescribepasswordLengthExtraLongPassword() {
 
 }
 
+
+ @Test
+     void specialCharacterisAnynonalphanumericcharacter() {
+     // arrange
+     String password = "iiiiiiiiiiii";
+    
+     // act
+    boolean actual = PasswordUtils.isAlphanumeric(password);
+    
+    
+    // assert  
+    assertEquals(true, actual);
+
+
+}
+
+ @Test
+     void lasttesterForthisassignment() {
+     // arrange
+     String password = "iiiiiiiiiiii";
+    
+     // act
+    boolean actual = PasswordUtils.containsTriple(password);
+    
+    
+    // assert  
+    assertEquals(true, actual);
+
+
+}
+
 }
