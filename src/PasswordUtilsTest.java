@@ -56,7 +56,7 @@ void testDescribepasswordLengthExtraLongPassword() {
  @Test
      void specialCharacterisAnynonalphanumericcharacter() {
      // arrange
-     String password = "iiiiiiiiiiii";
+     String password = "cccasdacacs";
     
      // act
     boolean actual = PasswordUtils.isAlphanumeric(password);
